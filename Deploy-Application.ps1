@@ -171,7 +171,8 @@ Try {
 		Show-InstallationProgress
 
 		## <Perform Pre-Uninstallation tasks here>
-
+		#Uninstall Microsoft Access Database Engine 2016
+		Execute-MSI -Action Uninstall -Path '{90160000-00D1-0409-0000-0000000FF1CE}'
 
 		##*===============================================
 		##* UNINSTALLATION
